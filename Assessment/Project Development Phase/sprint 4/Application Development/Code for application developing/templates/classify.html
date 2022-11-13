@@ -1,0 +1,125 @@
+{% extends 'home.html' %}
+{% block title %}
+    {{title}}
+{% endblock title %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classify</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/4104765148.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="header">
+    <div class="container">
+       <div class="navbar">
+        <div class="logo">
+            <a href="analysis.html"><img src="../static/fruit9.jpg"S width="150px"></a>
+            <strong><br><br>NUTRITION ANALYZER FOR FITNESS ENTHUSIASTS</strong>
+        </div>
+        <nav>
+            <ul id="MenuItems"> 
+                <li><strong><a href="analysis.html">HOME</a></strong></li>
+                <li><strong><a href="classify.html">CLASSIFY</a></strong></li>
+                
+            </ul>
+            
+        
+        </nav>
+        
+      </div>
+        
+    </div>
+   </div>
+            
+    <!------- featured categories -------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>IMAGES</h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="detail.html"><img src="../static/apple.jpg"></a>
+                <h4>APPLE</h4>
+               
+            </div>
+            <div class="col-4">
+                <img src="../static/banana.jpg">
+                <h4>BANANA</h4>
+                
+            </div>
+            
+            <div class="col-4">
+                <img src="../static/orange.jpg">
+                <h4>ORANGE</h4>
+               
+            </div>
+        </div>
+ 
+        
+            <div class="row">
+            <div class="col-4">
+                <img src="../static/pineapple.jpg">
+                <h4>PINEAPPLE</h4>
+                
+            </div>
+            <div class="col-4">
+                <img src="../static/strawbery.jpg">
+                <h4>STRAWBERY</h4>
+                
+            </div>
+           
+            <div class="col-4">
+                <img src="../static/jackfru.jpg">
+                <h4>JACKFRUIT</h4>
+                
+            </div>
+        </div>
+        
+           <div class="row">
+            <div class="col-4">
+                <img src="../static/grapes.jpg">
+                <h4>GRAPES</h4>
+                
+            </div>
+                <div class="col-4">
+                <img src="../static/cherry.jpg">
+                <h4>CHERRY</h4>
+                
+            </div>
+               <div class="col-4">
+                <img src="../static/melon.jpg">
+                <h4>WATERMELON</h4>
+                
+            </div>
+            
+            
+            
+        </div>
+        
+       
+    </div>
+
+    <!--------------js for toggle menu------>
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+                {
+                    MenuItems.style.maxHeight="200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight="0px";
+                }
+        }
+    </script>
+</body>
+</html>
+{% endblock content %}
