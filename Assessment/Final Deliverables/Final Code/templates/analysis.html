@@ -1,0 +1,135 @@
+{% extends 'home.html' %}
+{% block title %}
+    {{title}}
+{% endblock title %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/4104765148.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+     <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+            <a href="analysis.html"><img src="../static/fruit9.jpg"S width="150px"></a>
+            <strong><br><br>NUTRITION ANALYZER FOR FITNESS ENTHUSIASTS</strong>
+        </div>
+        <nav>
+            <ul id="MenuItems"> 
+                <li><strong><a href="analysis.html">HOME</a></strong></li>
+                <li><strong><a href="classify.html">CLASSIFY</a></strong></li>
+                
+            </ul>
+            
+        
+        </nav>
+        
+      </div>
+        
+    </div>
+   </div>
+    
+    
+       
+        <div class="row">
+            <div class="col-2">
+    
+                <h1>OBJECTIVE</h1>
+                <p>Food is essential for human life and has been the concern of many healthcare conventions. Nowadays new dietary assessment and nutrition analysis tools enable more opportunities to help people understand their daily eating habits, exploring nutrition patterns and maintain a healthy diet. Nutritional analysis is the process of determining the nutritional content of food. It is a vital part of analytical chemistry that provides information about the chemical composition, processing, quality control and contamination of food.</p>
+                
+            </div>
+            <div class="col-2">
+                <img src="../static/fruit-14.jpg" alt="">
+        
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-2">
+    
+                <h1>AIM</h1>
+                <p>The main aim of the project is to building a model which is used for classifying the fruit depends on the different characteristics like colour, shape, texture etc. Here the user can capture the images of different fruits and then the image will be sent the trained model. The model analyses the image and detect the nutrition based on the fruits like (Sugar, Fibre, Protein, Calories, etc.).</p>
+                
+            </div>
+            <div class="col-2">
+                <img src="../static/fruit3.jpg" alt="">
+        
+            </div>
+        </div>
+        
+            
+    <!------- featured categories -------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+            <div class="col-3">
+                <img src="../static/fruit-14.jpg">
+            </div>
+            <div class="col-3">
+                <img src="../static/fruit10.jpg">
+            </div>
+            <div class="col-3">
+                <img src="../static/fruit12.jpg">
+            </div>
+        </div>
+            
+        </div>
+        
+    </div>
+    <!---------- featured products -------->
+    <div class="small-container">
+        <h2 class="title">Description</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="../static/fruit7.jpg">
+                
+                <a href="" class="btn">GIT &#8594</a>
+                     
+                
+            </div>
+            <div class="col-4">
+                <img src="../static/fruit13.jpg">
+                
+                <a href="" class="btn">DOCUMENT &#8594</a>
+                     
+            
+            </div>
+            <div class="col-4">
+                <img src="../static/fruit11.jpg">
+                
+                <a href="" class="btn">DEMO &#8594</a>
+                     
+                
+            </div>
+           
+        </div>
+    
+        
+    </div>
+    <!--------------js for toggle menu------>
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight== "0px")
+                {
+                    MenuItems.style.maxHeight="200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight="0px";
+                }
+        }
+    </script>
+</body>
+</html>
+{% endblock content %}
