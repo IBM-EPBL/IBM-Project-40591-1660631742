@@ -1,0 +1,158 @@
+{% extends 'home.html' %}
+{% block title %}
+    {{title}}
+{% endblock title %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/4104765148.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="header">
+    <div class="container">
+       <div class="navbar">
+        <div class="logo">
+            <a href="analysis.html"><img src="../static/fruit9.jpg"S width="150px"></a>
+            <strong><br><br>NUTRITION ANALYZER FOR FITNESS ENTHUSIASTS</strong>
+        </div>
+        <nav>
+            <ul id="MenuItems"> 
+                <li><strong><a href="analysis.html">HOME</a></strong></li>
+                <li><strong><a href="classify.html">CLASSIFY</a></strong></li>
+                
+            </ul>
+            
+        
+        </nav>
+        
+      </div>
+        
+        
+    </div>
+   </div>
+    
+    <!-------------------single product details------>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="../static/apple.jpg" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="../static/6_100.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../static/177_100.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../static/181_100.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../static/6_100.jpg" width="100%" class="small-img">
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-2">
+                
+                <h1>APPLES</h1>
+                
+            
+        
+                <h3>Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Here are the nutrition facts for one raw, unpeeled, medium-sized apple (100 grams):<br>
+
+Calories: 52<br>
+Water: 86%<br>
+Protein: 0.3 grams<br>
+Carbs: 13.8 grams<br>
+Sugar: 10.4 grams<br>
+Fiber: 2.4 grams<br>
+Fat: 0.2 grams</p>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------title------------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related:</h2>
+            <p>View More</p>
+        </div>
+    </div>
+            
+    <!------- featured categories -------->
+    <div class="small-container">
+            <div class="row">
+            <div class="col-4">
+                <img src="../static/orange.jpg">
+                <h4>Orange</h4>
+                
+                
+            </div>
+            <div class="col-4">
+                <img src="../static/melon.jpg">
+                <h4>Water Melon</h4>
+               
+            </div>
+            <div class="col-4">
+                <img src="../static/grapes.jpg">
+                <h4>Grapes</h4>
+                
+            </div>
+            
+        </div>
+        
+       
+    </div>
+
+
+   
+    <!--------------js for toggle menu------>
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+                {
+                    MenuItems.style.maxHeight="200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight="0px";
+                }
+        }
+    </script>
+    
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+         
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+         SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+          SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+           SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+    
+</body>
+</html>
+{% endblock content %}
